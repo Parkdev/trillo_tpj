@@ -1,5 +1,10 @@
 const TestLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div className="bg-rose-500">{children}</div>;
+  return (
+    <div className="h-full">
+      <div>This is a navbar</div>
+      {children}
+    </div>
+  );
 };
 
 export default TestLayout;
