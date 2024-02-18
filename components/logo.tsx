@@ -12,7 +12,13 @@ export const Logo = () => {
   return (
     <Link href="/">
       <div className="hover:opacity-75 transition items-center gap-x-2 hidden md:flex">
-        <Image src="/logo.svg" alt="Logo" height={30} width={30}></Image>
+        <Image
+          src="/logo.svg"
+          alt="Logo"
+          width={0}
+          height={0}
+          className="w-8"
+        ></Image>
         <p className={cn("text-lg text-neutral-700", headingFont.className)}>
           My Toy Project
         </p>

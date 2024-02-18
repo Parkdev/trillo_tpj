@@ -41,7 +41,6 @@ export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
     []
   );
 
-  // 조금더 분석 필요
   const onExpand = (id: string) => {
     setExpanded((curr) => ({
       ...curr,
