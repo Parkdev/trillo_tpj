@@ -1,7 +1,7 @@
 import { OrganizationSwitcher } from "@clerk/nextjs";
 
 const OrganizationIdPage = () => {
-  return <div>{/* <OrganizationSwitcher hidePersonal /> */}</div>;
+  return <div>Org page</div>;
 };
 
 export default OrganizationIdPage;
