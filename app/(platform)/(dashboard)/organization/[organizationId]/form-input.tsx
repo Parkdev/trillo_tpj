@@ -1,6 +1,7 @@
 "use client";
 
 import { useFormStatus } from "react-dom";
+import { Input } from "@/components/ui/input";
 
 interface FormInputProps {
   // eslint-disable-next-line react/require-default-props
@@ -13,12 +14,12 @@ export function FormInput({ errors }: FormInputProps) {
   const { pending } = useFormStatus();
   return (
     <div>
-      <input
+      <Input
         id="title"
         name="title"
         required
         placeholder="Enter a board title"
-        className="border-black border p-1"
+        disabled={pending}
       />
       {errors?.title ? (
         <div>
