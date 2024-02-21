@@ -45,5 +45,6 @@ export async function create(prevState: State, formData: FormData) {
   }
 
   revalidatePath("organization/org_2cUDkHhAtBXtfzlCmB8WhFT3M5l");
-  redirect("organization/org_2cUDkHhAtBXtfzlCmB8WhFT3M5l");
+  // redirect("org_2cUDkHhAtBXtfzlCmB8WhFT3M5l");
+  return null;
 }
